@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(207, 65, 29);
+    background-image: url(images/imagen-robot-webp.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+input{
+    grid-column: span 2;
+    width: 30%;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px #805757;
+}
+
+span, div{
+    grid-column: span 2;
+    padding: 10px;
+    gap: 5px;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 70%;
+    margin: 0 auto;
+
+}
+#iniciar:hover{
+    background-color: #34db42;
+    color: #ffffff;
+}
+
+#reiniciar:hover{
+    background-color: #3498db;
+    color: #ffffff;
+}
